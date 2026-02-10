@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ambiente Virtual
+venv/
+.venv/
+env/
+.env
+my-venv/
+
+# Banco de dados Django
+db.sqlite3
+
+# Configurações locais (segurança)
+.env
+local_settings.py
+
+# Arquivos de mídia e estáticos
+media/
+staticfiles/
+
+# IDEs e Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
