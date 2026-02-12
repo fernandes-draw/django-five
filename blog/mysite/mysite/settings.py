@@ -1,6 +1,7 @@
 from pathlib import Path
 from decouple import config
-import certifi, os
+import certifi
+import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -18,6 +19,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
 
 # Application definition
 
@@ -27,7 +29,10 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     "django.contrib.staticfiles",
+    "taggit",
     "blog.apps.BlogConfig",
 ]
 
