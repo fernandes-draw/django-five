@@ -26,3 +26,9 @@ python -m pip install psycopg==3.1.18
 python manage.py dumpdata --indent=2 --output=mysite_data.json
 ```
 > **⚠️ IMPORTANTE:** Se você tiver PostgreSQL com PgAdmin4 instalado e em execução, altere a porta da aplicação para 5433 ou qualquer outra porta diferente da padrão do PostgreSQL (5432), ou interrompa o serviço PostgreSQL instalado localmente para evitar conflitos de porta.
+
+### Se ao tentar rodar o migrate com o TrigramExtension falhar, execute este comando no prompt
+
+```bash
+docker exec -it blog_db psql -U blog -d blog -c "CREATE EXTENSION pg_trgm;"
+```
