@@ -1,0 +1,7 @@
+venv-mysyte/
+*.pyc
+__pycache__/
+db.sqlite3
+.env
+.vscode/
+media/
