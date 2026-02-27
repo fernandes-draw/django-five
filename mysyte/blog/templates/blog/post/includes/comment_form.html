@@ -1,13 +1,20 @@
 <h2>Add new comment</h2>
 <form action="{% url 'blog:post_comment' post.id %}" method="post">
   {% comment %} {{ form.as_p }} {% endcomment %}
-  {% for field in form %}
+  {% comment %} {% for field in form %}
     <div class="my-div">
       {{ field.errors }}
       {{ field.label_tag }} {{ field }}
       <div class="help-text">{{ field.help_text|safe }}</div>
     </div>
-  {% endfor %}
+  {% endfor %} {% endcomment %}
+  <div class="left">
+    {{ form.name.as_field_group }}
+  </div>
+  <div class="left">
+    {{ form.email.as_field_group }}
+  </div>
+  {{ form.body.as_field_group }}
   {% csrf_token %}
   <p>
     <input type="submit" value="Add comment" />
