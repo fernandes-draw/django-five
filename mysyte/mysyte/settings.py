@@ -1,10 +1,10 @@
+import ssl
+from decouple import config
+from pathlib import Path
 import truststore
 
 truststore.inject_into_ssl()
 
-from pathlib import Path
-from decouple import config
-import ssl
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,6 +24,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# It’s good practice to keep the Django packages at the top,
+# third-party packages in the middle,
+# and local applications at the end of INSTALLED_APPS.
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -31,6 +35,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # Third part
+    "taggit",
+
+    # My apps
     "blog.apps.BlogConfig",
 ]
 
