@@ -8,7 +8,12 @@ from .forms import EmailPostForm, CommentForm, SearchForm
 from django.core.mail import send_mail
 from taggit.models import Tag
 from django.db.models import Count
-from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
+from django.contrib.postgres.search import (
+    SearchVector,
+    SearchQuery,
+    SearchRank,
+    TrigramSimilarity,
+)
 
 
 def post_list(request, tag_slug=None):
@@ -157,10 +162,11 @@ def post_search(request):
             search_query = SearchQuery(query)
             results = (
                 Post.published.annotate(
-                    search=search_vector, rank=SearchRank(search_vector, search_query)
+                    # search=search_vector, rank=SearchRank(search_vector, search_query)
+                    similarity=TrigramSimilarity("title", query),
                 )
-                .filter(rank__gte=0.3)
-                .order_by("rank")
+                .filter(similarity__gt=0.1)
+                .order_by("-similarity")
             )
 
     return render(
