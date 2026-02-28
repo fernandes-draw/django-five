@@ -1,4 +1,5 @@
 venv-mysyte/
+venv-bookmark/
 *.pyc
 __pycache__/
 db.sqlite3
