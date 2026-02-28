@@ -1,0 +1,299 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$tZnd1fhd4QLss6M4mjZ1ml$cCn1gdrnVx5/jZGlz8z9h/XUYge171WDnI/jEHC/djc=",
+    "last_login": "2026-02-24T20:57:55Z",
+    "is_superuser": true,
+    "username": "Everson",
+    "first_name": "Everson",
+    "last_name": "Fernandes",
+    "email": "fernandes_draw@hotmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-24T20:57:30Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ypcfhhq5jflbjd3c7f4dk02klakl2gxq",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSGUMjxcuu83EJgZpWogKe3K-O_apAvd3nPOfYmYtrXErfMSZxJnMYjT75YTPrjugO6p3prEVtdlznJX5EG7nBrx83K4fwcl9fKttYLEjswIaIyFERVaIEsBeHAakHQw3mNGouB5tCYYzJzBKUvp6rR4fwDVfzfj:1vuzTf:G0gmeoK2Y8hcY_3q_Do_L8Vu2FiwoGsUSoaCVIke7rg",
+    "expire_date": "2026-03-10T20:57:55.726Z"
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "example.com",
+    "name": "example.com"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Who was Django Heinhardt?",
+    "slug": "who-was-django-heinhardt",
+    "author": [
+      "Everson"
+    ],
+    "body": "Who was Django Heinhardt?",
+    "publish": "2026-02-24T20:58:00Z",
+    "created": "2026-02-24T20:58:38.201Z",
+    "updated": "2026-02-25T00:14:32.235Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "My second post",
+    "slug": "my-second-post",
+    "author": [
+      "Everson"
+    ],
+    "body": "My second post",
+    "publish": "2026-02-24T21:20:42Z",
+    "created": "2026-02-24T21:21:08.850Z",
+    "updated": "2026-02-25T01:44:23.272Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "My third post",
+    "slug": "my-third-post",
+    "author": [
+      "Everson"
+    ],
+    "body": "My third post",
+    "publish": "2026-02-24T21:21:10Z",
+    "created": "2026-02-24T21:23:07.424Z",
+    "updated": "2026-02-25T01:44:16.879Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "New title",
+    "slug": "another-post",
+    "author": [
+      "Everson"
+    ],
+    "body": "Post body.",
+    "publish": "2026-02-24T21:34:20Z",
+    "created": "2026-02-24T21:34:28.178Z",
+    "updated": "2026-02-25T01:43:43.075Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 1,
+    "name": "EVERSON FERNANDES",
+    "email": "fernandes_draw@hotmail.com",
+    "body": "This is the first comment",
+    "created": "2026-02-27T01:46:48.327Z",
+    "updated": "2026-02-27T01:48:56.457Z",
+    "active": false
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 1,
+    "name": "Everson Fernandes",
+    "email": "fernandes_draw@hotmail.com",
+    "body": "And this is another comment",
+    "created": "2026-02-27T01:47:42.881Z",
+    "updated": "2026-02-27T01:47:42.881Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 4,
+    "name": "Hexagonal Screw",
+    "email": "fernandes_draw@hotmail.com",
+    "body": "gsdfgdfgsgsdgfsdfg",
+    "created": "2026-02-27T02:06:00.187Z",
+    "updated": "2026-02-27T02:06:00.187Z",
+    "active": true
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-02-24T20:58:39.548Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "1",
+    "object_repr": "Who was Django Heinhardt?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-02-24T20:58:51.066Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "1",
+    "object_repr": "Everson",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-02-24T21:21:10.407Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "My second post",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-02-24T21:23:08.990Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "3",
+    "object_repr": "My third post",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-02-25T00:14:32.238Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "1",
+    "object_repr": "Who was Django Heinhardt?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-02-25T01:43:43.078Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "New title",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-02-25T01:44:17.175Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "3",
+    "object_repr": "My third post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-02-25T01:44:23.274Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "My second post",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-02-27T01:48:56.460Z",
+    "user": [
+      "Everson"
+    ],
+    "content_type": [
+      "blog",
+      "comment"
+    ],
+    "object_id": "1",
+    "object_repr": "Comment by EVERSON FERNANDES on Who was Django Heinhardt?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+}
+]
