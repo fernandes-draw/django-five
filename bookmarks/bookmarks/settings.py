@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-mie1(%+jst7vu%r-+8hdqo+u@0(6xu526c6d8i#+mh9a%3$&(8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ["mysite.com", "localhost", "127.0.0.1"]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "social_django",
+    "django_extensions",
 ]
 
 LOGIN_REDIRECT_URL = "dashboard"
