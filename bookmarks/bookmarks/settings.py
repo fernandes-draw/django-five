@@ -13,9 +13,9 @@ SECRET_KEY = "django-insecure-mie1(%+jst7vu%r-+8hdqo+u@0(6xu526c6d8i#+mh9a%3$&(8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Application definition
 
@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "social_django",
 ]
 
 LOGIN_REDIRECT_URL = "dashboard"
@@ -34,8 +35,8 @@ LOGIN_URL = "login"
 LOGOUT_URL = "logout"
 
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'account.authentication.EmailAuthBackend',
+    "django.contrib.auth.backends.ModelBackend",
+    "account.authentication.EmailAuthBackend",
 ]
 
 MIDDLEWARE = [
